@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scroll.js"></script>
+    <title>Kasper Veliz</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a class="nav-text" id="bookme" onclick="scrollToElement('main-contact')">BOOK ME</a></li>
+                <li><a><img class="logo" src="assets/photos/KVPhotoLogo.png"></a></li>
+                <li><a id="gallery-nav" class="nav-text" onclick="scrollToElement('main-gallery')">GALLERY</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="main-gallery" class="display-container">
+        <div class="section-title">GALLERY</div>
+        <ul class="panel-container">
+            <li class="gallery-item"><a href="">
+                <div class="panel-img" id="gr86-shoot"></div>
+                <h2 class="panel-title">GR86</h2>
+                <p class="panel-body">Photoshoot for GR86</p>
+            </a></li>
+            <li class="gallery-item"><a href="">
+                <div class="panel-img" id="fdrift-gallery"></div>
+                <h2 class="panel-title">Formula Drift</h2>
+                <p class="panel-body">Englishtown 2025</p>
+            </a></li>
+            <li class="gallery-item"><a href="">
+                <div class="panel-img" id="k1-gallery"></div>
+                <h2 class="panel-title">K1 Karting</h2>
+                <p class="panel-body">K1 Teen Karting League 2025</p>
+            </a></li>
+        </ul>
+    </div>
+    <div class="display-container">
+        <div class="section-title">CONTACT ME</div>
+        <form class="email-form" id="main-contact">
+            <input type="text" id="fname" name="fname" placeholder="Name"><br>
+            <input type="text" id="email" name="email" placeholder="Email"><br>
+            <input type="text" id="subject" name="subject" placeholder="Subject"><br>
+            <div id="message-title">Message:</div><br>
+            <textarea id="message" name="message" rows="10" cols="100" wrap="hard"></textarea> <br>
+            <input type="submit" class="button-email-form" value="Submit">
+        </form>
+    </div>
+    
+</body>
+</html>
